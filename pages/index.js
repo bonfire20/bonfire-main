@@ -74,7 +74,7 @@ export default function Home() {
     getSecurity();
   }, []);
 
-  function nFormatter(num, digits = 2) {
+  function nFormatter(num, digi ts = 2) {
     const lookup = [
       { value: 1, symbol: "" },
       { value: 1e3, symbol: "K" },
