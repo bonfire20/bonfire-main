@@ -195,8 +195,8 @@ export default function Home() {
             <div className="bg-[linear-gradient(180deg,#d02de5_0%,#990087_100%)] p-6 text-center uppercase">
               <div className="text-lg lg:text-2xl">Total Burned</div>
               <div className="text-xl lg:text-3xl font-bold mt-2 lg:mt-3">
-                {nFormatter(parseFloat(totalBurned / 10 ** 18).toFixed(2))}{" $PYROSIS "}
-                
+                {nFormatter(parseFloat(totalBurned / 10 ** 18).toFixed(2))}{" "}
+                {token?.baseTokenData.symbol}
               </div>
             </div>
             <div className="bg-[linear-gradient(180deg,#d02de5_0%,#990087_100%)] p-6 text-center uppercase">
@@ -213,8 +213,8 @@ export default function Home() {
               <div className="text-lg lg:text-2xl">Your Balance</div>
               <div className="text-xl lg:text-3xl font-bold mt-1 lg:mt-3">
                 {" "}
-                {nFormatter(balance?.displayValue)}{" $PYROSIS "}
-                
+                {nFormatter(balance?.displayValue)}{" "}
+                {token?.baseTokenData.symbol}
               </div>
             </div>
           </div>
